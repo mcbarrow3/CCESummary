@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592933875433.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3103166920",
+    "id" : "826F7500",
+    "lastKnownWriteTime" : 1593031281,
+    "last_content_update" : 1593031281929,
+    "path" : "C:/Users/jmsteve/OneDrive - New York State Office of Information Technology Services/R/CCESummary/PermitHolderTotals.R",
+    "project_path" : "PermitHolderTotals.R",
+    "properties" : {
+        "cursorPosition" : "28,20",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1615845251400.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "60|56|78|0|\n",
+    "hash" : "2651217980",
+    "id" : "FCBDD3BA",
+    "lastKnownWriteTime" : 1622061736,
+    "last_content_update" : 1622061736949,
+    "path" : "C:/Users/jmsteve/OneDrive - New York State Office of Information Technology Services/R/R_Projects/CCESummary/script.R",
+    "project_path" : "script.R",
+    "properties" : {
+        "cursorPosition" : "100,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

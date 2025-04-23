@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593022944752.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F1406891",
+    "lastKnownWriteTime" : 2482730676494692210,
+    "last_content_update" : 1593022944752,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "746DA844",
+        "caption" : "SAFIS2019Trips",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=SAFIS2019Trips&cache_key=746DA844",
+        "displayedObservations" : "3",
+        "environment" : "",
+        "expression" : "SAFIS2019Trips",
+        "object" : "SAFIS2019Trips",
+        "preview" : "0",
+        "totalObservations" : "3",
+        "variables" : "2"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

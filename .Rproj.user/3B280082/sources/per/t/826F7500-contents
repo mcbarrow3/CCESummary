@@ -1,0 +1,29 @@
+library(tidyverse)
+getwd()
+setwd("C:/Users/jmsteve/OneDrive - New York State Office of Information Technology Services/R/CCESummary/data")
+
+##This code gives the number of individual permit holders in NYFISH for a given year##
+
+All2019Permits<- read.csv("2019_all_permits_NYFISH.csv", header=TRUE, sep=",")
+str(All2019Permits)
+View(All2019Permits)
+length(unique(All2019Permits$ï..public_id))
+
+All2020Permits<- read.csv("2020_all_permits_NYFISH.csv", header=TRUE, sep=",")
+str(All2020Permits)
+length(unique(All2020Permits$ï..public_id))
+
+##read_csv for tibble, this code groups by submit method and gives the number of individual trips by method for 2019 or 2020 dataset##
+
+SAFIS2019Trips <- read_csv("2019_all_SAFIS_trips.csv") %>% 
+  group_by(`Submit method`) %>% 
+  summarize(method = n_distinct(`Trip I#`))
+
+View(SAFIS2019Trips)
+
+
+SAFIS2020Trips <- read_csv("2020_all_SAFIS_trips.csv") %>%
+  group_by(`Submit method`)%>% 
+  summarise(n = n_distinct(`Trip I#`))
+
+View(SAFIS2020Trips)
