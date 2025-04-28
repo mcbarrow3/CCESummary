@@ -1,12 +1,12 @@
 library(tidyverse)
-setwd("C:/Users/jmsteve/OneDrive - New York State Office of Information Technology Services/R")
+setwd("C:/Users/mcbarrow/repos/CCESummary/2024")
 
-CCERaw <- read.csv("2019_NY_SAFIS_Trips.csv", header=TRUE, sep=",")
+CCERaw <- read.csv("all_etrips_2024_noattributes.csv", header=TRUE, sep=",")
 View(CCERaw)
-CCEFiltered <- select(CCERaw, Trip.I., License.., First.Name, Middle.Name, Lname.Fisher, Name.Suffix, Corporate.Name, Submit.method)
+CCEFiltered <- select(CCERaw, Trip.Id, License, First.Name, Middle.Name, Lname.Fisher, Name.Suffix, Corporate.Name, Submit.Method, Trip.Type)
 View(CCEFiltered)
 CCEFiltered$whole_name <- paste(CCEFiltered$First.Name, CCEFiltered$Middle.Name, CCEFiltered$Lname.Fisher, CCEFiltered$Name.Suffix, CCEFiltered$Corporate.Name, sep=" ")
-CCEFiltered <- CCEFiltered %>% rename("public_id"="License..", "VTR_ID"="Trip.I.", "first_name"="First.Name", "mi"="Middle.Name", "last_name"="Lname.Fisher", "suffix"="Name.Suffix", "corporate_name"="Corporate.Name")
+CCEFiltered <- CCEFiltered %>% rename("public_id"="License", "VTR_ID"="Trip.Id", "first_name"="First.Name", "mi"="Middle.Name", "last_name"="Lname.Fisher", "suffix"="Name.Suffix", "corporate_name"="Corporate.Name")
 Length <- length(unique(CCEFiltered$VTR_ID))
 TotaleTrips <- distinct(CCEFiltered)
 View(TotaleTrips)
@@ -14,7 +14,7 @@ TotaleTrips <- TotaleTrips[c(1,2,3,4,5,6,7,9,8)] %>% mutate_if(is.factor, as.cha
 
 str(TotaleTrips)
 
-EntryMode <- TotaleTrips %>% count(Submit.method, sort=TRUE)
+EntryMode <- TotaleTrips %>% count(Submit.Method, sort=TRUE)
 EntryMode
 
 library(RODBC)

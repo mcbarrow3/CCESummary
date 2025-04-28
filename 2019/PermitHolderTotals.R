@@ -1,6 +1,6 @@
 library(tidyverse)
 getwd()
-setwd("C:/Users/jmsteve/OneDrive - New York State Office of Information Technology Services/R/CCESummary/data")
+setwd("C:/Users/mcbarrow/repos/CCESummary/2019/data")
 
 ##This code gives the number of individual permit holders in NYFISH for a given year##
 
